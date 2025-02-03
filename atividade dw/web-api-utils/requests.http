@@ -1,0 +1,25 @@
+### lorem ipsum
+
+POST http://localhost:3000/utils/txt/lowercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### LOREM IPSUM
+
+POST http://localhost:3000/utils/txt/uppercase HTTP/1.1
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### Menor
+
+GET http://localhost:3000/utils/num/minimum/?input=10,1,100 HTTP/1.1
+
+### Maior
+
+GET http://localhost:3000/utils/num/maximum/?input=10,1,100 HTTP/1.1
